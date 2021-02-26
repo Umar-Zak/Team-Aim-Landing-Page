@@ -10,6 +10,7 @@
         rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Team-Landig Page</title>
 </head>
 <body  >
@@ -112,17 +113,17 @@
 <!-- Hero section starts here -->
 <section class="block block--primary hero-block">
     <div class="grid grid--1x2 container">
-        <div class="hero-block__content">
+        <div data-aos="fade-right" class="hero-block__content">
             <h1 class="hero-block__header">Best Network Marketing Team</h1>
             <p class="hero-block__tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem
                 ratione illo iure alias ad.</p>
             <button class="btn btn--light">Get Started</button>
         </div>
-        <div class="card"><img src="Images/hero-image.jpg" alt="A man holding laptop" class="hero-block__image"></div>
+        <div data-aos="fade-left" class="card"><img src="Images/hero-image.jpg" alt="A man holding laptop" class="hero-block__image"></div>
     </div>
 </section>
 <!-- Steps section starts here -->
-<section id="steps" class="block block--light steps-block">
+<section data-aos="fade-up" id="steps" class="block block--light steps-block">
     <div class="container">
         <div class="block__heading">
             <h2 class="steps-block__header">How We Work</h2>
@@ -173,7 +174,7 @@
 <!-- About section starts here -->
 <section id="about" class="block container about-block">
     <div class="grid grid--1x2">
-        <form class="card contact-form">
+        <form data-aos="fade-right" class="card contact-form">
             <h3 class="form__header">We Love to hear from you</h3>
             <input placeholder="Your name here" type="text" name="name" class="input">
             <input placeholder="Email here" type="email" name="email" class="input">
@@ -181,7 +182,7 @@
             <textarea class="input" name="" id="" cols="10" rows="10">Your message</textarea>
             <button class="btn btn--primary btn--block">Submit</button>
         </form>
-        <div class="about-block__content">
+        <div data-aos="fade-left" class="about-block__content">
             <h2 class="about-block__header">About Us</h2>
             <p class="about-block__tagline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error modi quasi
                 culpa esse quisquam alias nihil aut architecto repellendus veniam?</p>
@@ -208,7 +209,7 @@
     </div>
 </section>
 <!-- Team section starts here -->
-<section id="team" class="block block--light team-block">
+<section data-aos="fade-up" id="team" class="block block--light team-block">
     <div class="container">
         <div class="block__heading">
             <h2 class="team-block__header">Meet The Team</h2>
@@ -257,7 +258,7 @@
     </div>
 </section>
 <!-- Showcase section starts here -->
-<section id="gallery" class="block showcase-block">
+<section data-aos="fade-up" id="gallery" class="block showcase-block">
     <div class="container">
         <div class="block__heading">
             <h2 class="showcase-block__header">Our Testimonies</h2>
@@ -265,24 +266,28 @@
                 nisi voluptatum. Fugiat nihil itaque voluptatem ad, enim alias sapiente.</p>
         </div>
         <div class="grid grid--1x3 gallery-container">
-            <div class="card gallery">
+            <div data-aos="fade-right" class="card gallery">
                 <img src="Images/card-1.jpg" alt="Tema Event" class="gallery__image">
             </div>
-            <div class="card gallery">
+            <div data-aos="zoom-in" class="card gallery">
                 <img src="Images/card-2.jpg" alt="Tema Event" class="gallery__image">
             </div>
-            <div class="card gallery">
+            <div data-aos="fade-left" class="card gallery">
                 <img src="Images/card-3.jpg" alt="Tema Event" class="gallery__image">
             </div>
         </div>
     </div>
 </section>
 <!-- footer -->
- <section style="height: 100px;" class="footer-section">
+ <section   class="footer-section">
     <footer>
         <p>Open Aim Business &copy; 2021</p>
     </footer>
 </section>
 <script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
  </body>
 </html>

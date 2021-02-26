@@ -602,6 +602,7 @@ h3 {
   .hero-block__content {
     text-align: left;
     align-self: center;
+    margin-right: 3rem;
   }
 }
 
@@ -612,4 +613,5 @@ h3 {
   text-align: center;
   margin-top: -0.5rem;
   padding-top: 2rem;
+  height: 100px;
 }
